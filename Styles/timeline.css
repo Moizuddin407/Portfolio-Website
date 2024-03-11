@@ -1,0 +1,41 @@
+
+.timeline {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+  padding-left: 30px; /* Adjust the padding for better alignment */
+  max-width: 100%; /* Constrain the width */
+}
+
+.timeline .timeline-item {
+  position: relative;
+  padding-bottom: 20px; /* Add some padding between timeline items */
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -20px; /* Adjust the position of the circle */
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+
+@media (max-width: 768px) {
+  .timeline .timeline-item:after {
+    left: -15px; /* Adjust circle position for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline .timeline-item {
+    padding-bottom: 10px; /* Further reduce padding for smaller screens */
+  }
+  
+  .timeline .timeline-item:after {
+    left: -10px; /* Adjust circle position for even smaller screens */
+  }
+}

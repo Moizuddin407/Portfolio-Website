@@ -1,0 +1,17 @@
+@keyframes scaleCard {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.proj .card {
+    transition: box-shadow 0.3s;
+}
+
+.proj .card:hover {
+    animation: scaleCard 0.3s forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

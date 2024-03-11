@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.contactme * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactme {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure the container takes full height of the viewport */
+}
+
+.contactme .container {
+  width: 85%;
+  max-width: 800px; /* Limit the maximum width of the form */
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contactme .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactme .container .content .left-side {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.contactme .content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.contactme .content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+
+.contactme .content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contactme .content .left-side .details .text-one,
+.contactme .content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+  word-wrap: break-word; /* Allow long text to wrap */
+}
+
+.contactme .container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.contactme .content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+
+.contactme .right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.contactme .right-side .input-box input,
+.contactme .right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.contactme .right-side .message-box {
+  min-height: 110px;
+}
+
+.contactme .right-side .input-box textarea {
+  padding-top: 6px;
+}
+
+.contactme .right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.contactme .right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactme .button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .contactme .container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+
+  .contactme .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 820px) {
+  .contactme .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+
+  .contactme .container .content {
+    flex-direction: column-reverse;
+  }
+
+  .contactme .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contactme .container .content .left-side::before {
+    display: none;
+  }
+
+  .contactme .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}
